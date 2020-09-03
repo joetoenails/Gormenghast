@@ -102,3 +102,5 @@ function generatePoem(wordCorpus,numberOfLines){
 let gormenPoem = generatePoem(gormenBlock,10)
 console.log(gormenPoem)
 document.getElementById('poem').innerHTML = gormenPoem
+
+//https://github.com/joetoenails/Gormenghast
