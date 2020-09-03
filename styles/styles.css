@@ -1,19 +1,53 @@
+
 body {
+
+    
+    color:#ffffff;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
     text-align: center;
     background-color: #f0e8c5;
+    width: 50%;
+    max-width: 400px;
+    margin:auto;
+   
+  }
+
+  h1{color:#ffffff;
+    font-family: Arial;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    margin:auto;
+    position: fixed;
+    z-index: 2;
+
+  }
+  h2{color:#ffffff;
+    font-style: italic;
+    font-family: Arial;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    width: 50%;
+    max-width: 400px;
+    margin:auto;
+    position: fixed;
+    z-index: 2;
+
   }
   
   div {
     margin-top: 15px;
   }
   
-  .image-section {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .section-style {
-    margin-right: 25px;
-    margin-left: 25px;
-    background-color: white;
+  #bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+      
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
   }

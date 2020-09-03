@@ -1,6 +1,5 @@
 document.getElementById('date').innerHTML = new Date().toDateString();
 
-
 // this textBlock is from Gormenghast, a very weird cool old gothic fantasy novel about a giant castle and the weirdos who live there. The writing itself is already very poetic, so I figured poems made from an exercept may actually sound nice.
 let gormenBlock = "Gormenghast, that is, the main massing of the original stone, taken by itself would have displayed a certain ponderous architectural quality were it possible to have ignored the circumfusion of those mean dwellings that swarmed like an epidemic around its outer walls. They sprawled over the sloping earth, each one half way over its neighbour until, held back by the castle ramparts, the innermost of these hovels laid hold on the great walls, clamping themselves thereto like limpets to a rock. These dwellings, by ancient law, were granted this chill intimacy with the stronghold that loomed above them. Over their irregular roofs would fall throughout the seasons, the shadows of time-eaten buttresses, of broken and lofty turrets, and, most enormous of all, the shadow of the Tower of Flints. This tower, patched unevenly with black ivy, arose like a mutilated finger from among the fists of knuckled masonry and pointed blasphemously at heaven. At night the owls made of it an echoing throat; by day it stood voiceless and cast its long shadow. Withdrawn and runinous it broods in umbra: the immemorial masonry: the towers, the tracks. Is all corroding? No. Through an avenue off spires a zephyr floats; a bird whistles; a freshet bears away from a choked river. Deep in a fist of stone a doll's hand wriggles, warm rebellious on the frozen palm. A shadow shifts its length. A spider stirs. And darkness winds bewteen the characters."
 
@@ -102,3 +101,4 @@ function generatePoem(wordCorpus,numberOfLines){
 
 let gormenPoem = generatePoem(gormenBlock,10)
 console.log(gormenPoem)
+document.getElementById('poem').innerHTML = gormenPoem
