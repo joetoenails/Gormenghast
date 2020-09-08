@@ -101,22 +101,30 @@ function writeLine(markovObject,wordNum){
 }
 
 function generatePoem(wordCorpus,numberOfLines){
-  let poem = ""
+  let poem = [];
   let poemMarkov = markovMaker((parser(wordCorpus)))
 
   for (let i=0;i<numberOfLines;i++){
     let newLine = writeLine(poemMarkov)
-    poem+=`${newLine}\n`
+    poem.push(newLine)
   }
 
   return poem;
-
 }
 
 let gormenPoem = generatePoem(gormenBlock,10)
 console.log(gormenPoem)
 
 
-document.getElementById('poem').innerHTML = gormenPoem
+document.getElementById('poem1').innerHTML = gormenPoem[0]
+document.getElementById('poem2').innerHTML = gormenPoem[1]
+document.getElementById('poem3').innerHTML = gormenPoem[2]
+document.getElementById('poem4').innerHTML = gormenPoem[3]
+document.getElementById('poem5').innerHTML = gormenPoem[4]
+document.getElementById('poem6').innerHTML = gormenPoem[5]
+document.getElementById('poem7').innerHTML = gormenPoem[6]
+document.getElementById('poem8').innerHTML = gormenPoem[7]
+document.getElementById('poem9').innerHTML = gormenPoem[8]
+document.getElementById('poem10').innerHTML = gormenPoem[9]
 document.getElementById('date').innerHTML = new Date().toDateString();
 //https://github.com/joetoenails/Gormenghast
